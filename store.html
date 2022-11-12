@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>KS Car sale</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="home.html"><img src="Pictures/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="brand.html">BRANDS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+            </ul>        
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>   
+    <h1>Store</h1>
+</section>
+
+<!------store------->
+
+<section class="brands">
+    <h1>Top selection</h1>
+
+    <div class="row">
+        <div class="brands-col">
+            <img src="Pictures/Ferrari.jpg">
+            <div class="layer">
+                <h3>Ferrari f8</h3>
+            </div>
+        </div>
+        <div class="brands-col">
+            <img src="Pictures/tesla.jpg">
+            <div class="layer">
+                <h3>Tesla Model 3</h3>
+            </div>
+        </div>
+        <div class="brands-col">
+            <img src="Pictures/lam.jpg">
+            <div class="layer">
+                <h3>Lamborgini Avandator</h3>
+            </div>
+        </div>
+        <div class="brands-col">
+            <img src="Pictures/bmw-i8.jpg">
+            <div class="layer">
+                <h3>BMW i8</h3>
+            </div>
+        </div>
+        <div class="brands-col">
+            <img src="Pictures/amg-gt.jpg">
+            <div class="layer">
+                <h3>Benz Amg-GT</h3>
+            </div>
+        </div>
+        <div class="brands-col">
+            <img src="Pictures/911.jpg">
+            <div class="layer">
+                <h3>Porsche 911</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<!------- Footer ------->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>KS AutoMobile is a website where you can buy<br> and sell vehicles. It's easy to buy and<br> sell vehicles with KS AutoMobile.</p>
+    <div class="icon">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-email"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Copyright@ 2021 <i class="fa fa-at"></i>Design by Keheliya S Manathunga</p> 
+</section>
+
+<!------javaScript for Toggle Menu-------->
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+ 
+</body>	
+</html>
+
+
+

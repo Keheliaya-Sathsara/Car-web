@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>KS Car sale</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="home.html"><img src="Pictures/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="brand.html">BRANDS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+            </ul>        
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>   
+    <h1>About Us</h1>
+</section>
+
+<!---------- about us contain ------->
+
+<section class="about-us">
+
+    <div class="raw">
+        <div class="about-col">
+            <h1>Sri Lankan Largest Car Market</h1>
+            <p>KS AutoMobile is a website where you can buy and sell vehicles.
+            It's easy to buy and sell vehicles with KS AutoMobile. If you are
+            a seller, all you have to do is post your ad on our platform. It takes 
+            less than 2 minutes to post an ad on KS AutoMobile. You can sign up for 
+            a free account and post your ads. If you are a buyer you can find your 
+            ideal vehicle by browsing thousands of vehicles available in our site.</p>
+            <a href="" class="store_btn red-btn">For More</a>
+        </div>
+    </div>
+
+</section>
+
+
+
+<!------- Footer ------->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>KS AutoMobile is a website where you can buy<br> and sell vehicles. It's easy to buy and<br> sell vehicles with KS AutoMobile.</p>
+    <div class="icon">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-email"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Copyright@ 2021 <i class="fa fa-at"></i>Design by Keheliya S Manathunga</p> 
+</section>
+
+<!------javaScript for Toggle Menu-------->
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>    
+</body>	
+</html>

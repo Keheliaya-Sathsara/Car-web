@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>KS Car sale</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="home.html"><img src="Pictures/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="brand.html">BRANDS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+            </ul>        
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>   
+<div class="text-box">
+    <h1>KS AutoMobile</h1>
+    <p>Sri Lankan best car selling website. You can buy your favourite<br> car brand
+    items in our store with cool offers and<br> budget prices and friendly customer service.      
+    </p>     
+    <a href="store.html" class="store_btn">VISIT OUR STORE</a>
+    <div class="search_bar">
+        <input class="typing" type="text" placeholder="Search" />
+        <a class="btn">
+          <i class="fas fa-search">
+          </i>
+        </a>
+      </div>
+</div>
+</section>
+
+<!------Brands------->
+
+<section class="brands">
+    <h1>Main Car Brands</h1>
+
+    <div class="row">
+        <div class="brands-col">
+            <img src="Pictures/ferrari.png">
+            <div class="layer">
+                <h3>Ferrari</h3>
+            </div>
+        </div>
+        <div class="brands-col">
+            <img src="Pictures/Tesla.png">
+            <div class="layer">
+                <h3>Tesla</h3>
+            </div>
+        </div>
+        <div class="brands-col">
+            <img src="Pictures/lambo.png">
+            <div class="layer">
+                <h3>Lamborgini</h3>
+            </div>
+        </div>
+        <div class="brands-col">
+            <img src="Pictures/bmw.jpg">
+            <div class="layer">
+                <h3>BMW</h3>
+            </div>
+        </div>
+        <div class="brands-col">
+            <img src="Pictures/benz.jpg">
+            <div class="layer">
+                <h3>Benz</h3>
+            </div>
+        </div>
+        <div class="brands-col">
+            <img src="Pictures/porsche.png">
+            <div class="layer">
+                <h3>Porsche</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!------ Call To Action ------->
+
+<section class="cont">
+    <h1>Join with us for the most suitable car for you<br> with fair, safe and reliable deals</h1>
+    <a href="contact.html" class="store_btn">CONTACT US</a>
+</section>
+
+<!------- Footer ------->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>KS AutoMobile is a website where you can buy<br> and sell vehicles. It's easy to buy and<br> sell vehicles with KS AutoMobile.</p>
+    <div class="icon">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-email"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Copyright@ 2021 <i class="fa fa-at"></i>Design by Keheliya S Manathunga</p> 
+</section>
+
+<!------javaScript for Toggle Menu-------->
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>    
+</body>	
+</html>
